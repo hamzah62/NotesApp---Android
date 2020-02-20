@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNoteActivity">
+
+    <TextView
+        android:id="@+id/noteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/NoteTitle"
+        android:background="@drawable/shape_line"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:layout_below="@id/noteTitle"
+    android:layout_above="@id/btn_delete">
+    <TextView
+        android:id="@+id/noteContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/NoteContent"
+        />
+</ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btn_delete"
+        android:layout_alignParentBottom="true"
+        style="@style/mButton"
+        android:background="#f43030"
+        />
+
+
+</RelativeLayout>

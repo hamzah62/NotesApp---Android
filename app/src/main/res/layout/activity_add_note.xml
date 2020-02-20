@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNoteActivity">
+
+    <EditText
+        android:id="@+id/noteTitle"
+        style="@style/NoteTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        />
+
+    <EditText
+        android:id="@+id/noteContent"
+        style="@style/NoteContent"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:hint="Content..."
+        android:background="@android:color/transparent"
+        android:layout_above="@id/btn_save"
+        android:layout_below="@id/noteTitle"/>
+
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btn_save"
+        android:layout_alignParentBottom="true"
+        android:background="#14a3bb"
+        style="@style/mButton"
+/>
+
+
+</RelativeLayout>
